@@ -19,5 +19,13 @@ pairs(dsv,
       panel = panel.smooth,
       main = "Scatterplat matrix for Google SearchData data set\nUsing variables nba, nfl, fifa, digree, & Age\n R pairs",
       diag.panel = panel.hist,
-      pch = 16,
+      pch = 20,
       col = brewer.pal(5, "Set2"))
+
+# creating a scatterplot matrix on the same data set using "car"
+scatterplotMatrix(~nba + nfl + fifa + degree + age,
+                 data = ds,
+                 pch = 20,
+                 col = brewer.pal(5, "Dark2")
+                 )
+
