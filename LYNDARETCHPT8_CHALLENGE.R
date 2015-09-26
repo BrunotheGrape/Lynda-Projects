@@ -26,6 +26,7 @@ pairs(dsv,
 scatterplotMatrix(~nba + nfl + fifa + degree + age,
                  data = ds,
                  pch = 20,
-                 col = brewer.pal(5, "Dark2")
+                 col = brewer.pal(5, "Dark2"),
+                 main = "Scatterplot Matrix for Iris Data Using \"car\" Package"
                  )
 
